@@ -1,0 +1,10 @@
+body {
+    background-color: blue;
+}
+
+header {
+    border: 2px black;
+    box-shadow: 4px 8px 10px black;
+    text-align: center;
+    
+}
