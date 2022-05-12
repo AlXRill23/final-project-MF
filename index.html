@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script> -->
     <script src="https://kit.fontawesome.com/5aae8e0e1f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
@@ -23,13 +23,14 @@
 
 
 <body>
-    <main class="container">
+    <main class="container-fluid">
         <header>
             <h1>FINAL PROJECT</h1>
+            <img src="img/1.jpg" height="300px" alt="logo">
         </header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Site Navagation</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -61,48 +62,76 @@
             </div>
         </nav>
 
-        <div class="jumbotron bg-dark bg-gradient text-light p-5">
+        <div class="jumbotron bg-primary text-light p-5" >
             <div class="container-fluid p-5">
-                <h1 class="fw-bold">Lorem ipsum dolor</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit vero quae ab sunt sit
-                    mollitia nesciunt quod sed harum, hic ea, iure nam cumque temporibus exercitationem veritatis minus
-                    optio?
-                </p>
-                <a href="" class="btn btn-outline-light">LEARN MORE</a>
+                <img src="img/OIP.jpg" class="container-fluid" alt="" >
+                <div class="text-back-jumbotron">
+                    <h1 class="fw-bold">The Tegu Lizard!</h1>
+                    <p>
+                        Tegu lizards, often referred to as the mononym “tegus,” are a unique reptile species with a
+                        distinct reputation. Despite their large size and somewhat intimidating looks, tegus are one of
+                        the most tamable lizards out there. Tegu lizard pets are capable of forming strong bonds with
+                        humans, presenting docile behavior that many compare to a dog.
+                        <a href="https://www.reptiledirect.com/tegu-lizard/" class="btn btn-outline-light">LEARN
+                            MORE</a>
+                    </p>
+                </div>
+
+
             </div>
         </div>
 
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <P><b class="fs-2">Species Summary</b></P> 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Tegu lizards, often referred to as the mononym “tegus,” are a unique reptile species with a distinct reputation. Despite their large size and somewhat intimidating looks, tegus are one of the most tamable lizards out there. 
+                    <br>
 
-        <div class="row wrapper">
-            <div class="col-left col-6">
-                COLUMN ONE
+                    Tegu lizard pets are capable of forming strong bonds with humans, presenting docile behavior that many compare to a dog. Some owners even report tegus coming to them after calling their name!
+                    <br>
+                    
+                    Originally from South America, both wild-caught and captive-bred tegus are available. This species is popular among breeders. Unfortunately, their wide availability has led to issues in some parts of the world.
+                </div>
+              </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <P><b class="fs-2">Tegu Care</b></P> 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Intelligence and personability aside, providing excellent tegu care does require a bit of effort. Many novice reptile keepers make the mistake of thinking that this species is a walk in the park. While their tamability certainly makes certain aspects of raising a tegu more manageable, these lizards are anything but low-maintenance.
+<br>
+                    There are several important aspects of tegu care that you need to be familiar with if you want them to thrive. Failing to provide the basics can lead to a bevy of health issues, problems with aggression, and a much shorter lifespan.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <P><b class="fs-2">Tegu Food & Diet</b></P> 
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Tegu lizards are natural omnivores. In the wild, they feed on a plethora of food sources. From insects and fish to seeds and fruit, they eat it all!
 
-            <div class="col-right col-6">
-                COLUMN TWO
+                    A varied diet is vital for this species. You want to provide them with as many vitamins, minerals, and essential nutrients as possible. Sticking to a single food source their entire life would be detrimental to their health.
+              </div>
             </div>
-
-        </div>
-        <div class="position-relative m-4">
-            <div class="progress" style="height: 1px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-            </div>
-            <button type="button"
-                class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
-                style="width: 2rem; height:2rem;">1</button>
-            <button type="button"
-                class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
-                style="width: 2rem; height:2rem;">2</button>
-            <button type="button"
-                class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
-                style="width: 2rem; height:2rem;">3</button>
-        </div>
+          </div>
 
 
         <footer>
-            <p>&copy; 2022 | MFAR</p>
+            <p>&copy; 2022 | MFAR <a href="#"><i class="fa-brands fa-facebook"></i></a> <a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-snapchat"></i></a>  </p>
         </footer>
     </main>
 </body>
